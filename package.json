@@ -1,0 +1,16 @@
+{
+  "name": "fixed-webcam",
+  "version": "0.0.1",
+  "main": "./src/main.js",
+  "author": "zapaiamarce",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron-packager": "^17.0.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "electron": "^21.2.0"
+  }
+}
