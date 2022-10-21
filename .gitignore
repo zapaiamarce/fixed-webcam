@@ -4,3 +4,4 @@ build
 # code completion
 .tag*
 .DS_Store
+out/

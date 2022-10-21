@@ -1,8 +1,14 @@
 const { app, BrowserWindow, crashReporter } = require("electron");
+const { systemPreferences } = require("electron");
 // crashReporter.start();
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 var mainWindow = null;
+
+const access = systemPreferences.getMediaAccessStatus("camera");
+if (access != "granted") {
+  systemPreferences.askForMediaAccess("camera");
+}
 
 // Quit when all windows are closed.
 app.on("window-all-closed", function () {
