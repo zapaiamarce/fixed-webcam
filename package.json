@@ -1,5 +1,6 @@
 {
   "name": "fixed-webcam",
+  "description":"Una webcam",
   "version": "0.0.1",
   "main": "src/main.js",
   "author": "zapaiamarce",
